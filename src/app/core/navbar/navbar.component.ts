@@ -1,0 +1,25 @@
+import {Component, OnInit} from '@angular/core';
+
+@Component({
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
+})
+export class NavbarComponent implements OnInit {
+
+  public isCollapsedn = false;
+
+  constructor() {
+  }
+
+  ngOnInit() {
+  }
+
+  public collapsed(event: any): void {
+    console.log(event);
+  }
+
+  public expanded(event: any): void {
+    console.log(event);
+  }
+}
