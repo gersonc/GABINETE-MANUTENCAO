@@ -8,6 +8,8 @@ import {ComboxComponent} from './combox/combox.component';
 import {ComboxService} from './combox/combox.service';
 import {CepService} from './cep/cep.service';
 import {AutocompleteService} from './autocomplete/autocomplete.service';
+import {MessagesComponent} from './messages/messages.component';
+import {MessageService} from './messages/message.service';
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import {AutocompleteService} from './autocomplete/autocomplete.service';
   declarations: [
     CampoControlErroComponent,
     FormDebugComponent,
-    ComboxComponent
+    ComboxComponent,
+    MessagesComponent
   ],
   exports: [
     FormDebugComponent,
@@ -27,7 +30,8 @@ import {AutocompleteService} from './autocomplete/autocomplete.service';
   providers: [
     ComboxService,
     CepService,
-    AutocompleteService
+    AutocompleteService,
+    MessageService
   ]
 })
 export class UtilModule {
