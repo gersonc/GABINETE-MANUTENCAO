@@ -8,12 +8,30 @@ import {CadsitePaginacaoInterface} from './dados.interface';
 export class DadosService {
 
   private gab$: Observable<CadsitePaginacaoInterface>;
-  private siteUrl = 'http://slimgn01/cadastro/incluirverificanome';
+  private siteUrl = 'http://manutencao.gabinet.com.br/api/';
 
   constructor(private http: HttpClient) {
   }
 
-  getSiteLer(): Observable<CadsitePaginacaoInterface> {
+  getSiteLer(start?: number = null,
+             limit?: number = null,
+             sort?: string = 'gab_datetime',
+             order?: string = 'DESC'): Observable<CadsitePaginacaoInterface> {
+    let url = this.siteUrl + 'site/ler.php?a=1';
+    if (start) {
+      url += '&_start=' + start;
+    }
+    if (limit) {
+      url += '&_limit=' + limit;
+    }
+    if (sort) {
+      url += '&_sort=' + sort;
+    }
+    if (order) {
+      url += '&_order=' + order;
+    }
+
+
     return this.http.get<CadsitePaginacaoInterface>(this.siteUrl);
   }
 
