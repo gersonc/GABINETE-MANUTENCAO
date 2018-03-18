@@ -3,8 +3,8 @@ import {Routes, RouterModule} from '@angular/router';
 
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'AppComponent'}
-  // { path: 'cadastro', loadChildren: 'app/cadastro/cadastro.module#CadastroModule'}
+  {path: '', pathMatch: 'full', redirectTo: 'AppComponent'},
+  {path: 'cadsite', loadChildren: 'app/cadsite/cadsite.module#CadsiteModule'}
 ];
 
 @NgModule({
