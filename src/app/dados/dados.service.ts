@@ -30,8 +30,6 @@ export class DadosService {
     if (order) {
       url += '&_order=' + order;
     }
-
-
     return this.http.get<CadsitePaginacaoInterface>(this.siteUrl);
   }
 

@@ -8,7 +8,12 @@ import {TableModule} from 'primeng/table';
     CommonModule,
     TableModule
   ],
-  declarations: [CadsiteComponent]
+  declarations: [
+    CadsiteComponent
+  ],
+  exports: [
+    CadsiteComponent
+  ]
 })
 export class CadsiteModule {
 }
