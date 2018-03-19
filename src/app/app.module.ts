@@ -10,6 +10,7 @@ import {AppRoutingModule} from './app.routing.module';
 import {UtilModule} from './util/util.module';
 import {FooterComponent} from './core/footer/footer.component';
 import {NavbarComponent} from './core/navbar/navbar.component';
+import {CadsiteModule} from './cadsite/cadsite.module';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import {NavbarComponent} from './core/navbar/navbar.component';
     HttpClientModule,
     CollapseModule.forRoot(),
     BsDropdownModule.forRoot(),
+    CadsiteModule,
     AppRoutingModule,
     UtilModule
   ],

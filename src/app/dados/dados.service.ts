@@ -13,10 +13,10 @@ export class DadosService {
   constructor(private http: HttpClient) {
   }
 
-  getSiteLer(start?: number = null,
-             limit?: number = null,
-             sort?: string = 'gab_datetime',
-             order?: string = 'DESC'): Observable<CadsitePaginacaoInterface> {
+  getSiteLer(start: number = null,
+             limit: number = null,
+             sort: string = 'gab_datetime',
+             order: string = 'DESC'): Observable<CadsitePaginacaoInterface> {
     let url = this.siteUrl + 'site/ler.php?a=1';
     if (start) {
       url += '&_start=' + start;
