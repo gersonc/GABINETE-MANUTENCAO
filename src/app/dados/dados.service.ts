@@ -8,7 +8,7 @@ import {CadsitePaginacaoInterface} from './dados.interface';
 export class DadosService {
 
   private gab$: Observable<CadsitePaginacaoInterface>;
-  private siteUrl = 'http://manutencao.gabinet.com.br/api/';
+  private siteUrl = 'http://nordeste.dv/api/';
 
   constructor(private http: HttpClient) {
   }
@@ -18,18 +18,23 @@ export class DadosService {
              sort: string = 'gab_datetime',
              order: string = 'DESC'): Observable<CadsitePaginacaoInterface> {
     let url = this.siteUrl + 'site/ler.php?a=1';
+    console.log('api->', url);
     if (start) {
       url += '&_start=' + start;
     }
+    console.log('api->', url);
     if (limit) {
       url += '&_limit=' + limit;
     }
+    console.log('api->', url);
     if (sort) {
       url += '&_sort=' + sort;
     }
+    console.log('api->', url);
     if (order) {
       url += '&_order=' + order;
     }
+    console.log('api->', url);
     return this.http.get<CadsitePaginacaoInterface>(this.siteUrl);
   }
 

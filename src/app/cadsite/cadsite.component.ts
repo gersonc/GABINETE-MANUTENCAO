@@ -45,6 +45,7 @@ export class CadsiteComponent implements OnInit {
       {field: 'gab_norte_id', header: 'NORTE_ID', sortable: 'true', largura: '80px'},
       {field: 'gab_observacoes', header: 'OBS', sortable: 'falsed', largura: '80px'}
     ];
+    this.getCadsites();
   }
 
   getCadsites() {
