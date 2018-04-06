@@ -34,8 +34,11 @@ export class DadosService {
     if (order) {
       url += '&_order=' + order;
     }
+
+    // this.headers.set('Access-Control-Allow-Origin', '*');
+
     console.log('api->', url);
-    return this.http.get<CadsitePaginacaoInterface>(this.siteUrl);
+    return this.http.get<CadsitePaginacaoInterface>(url);
   }
 
 }
