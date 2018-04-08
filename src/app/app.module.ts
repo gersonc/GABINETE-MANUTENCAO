@@ -11,6 +11,7 @@ import {UtilModule} from './util/util.module';
 import {FooterComponent} from './core/footer/footer.component';
 import {NavbarComponent} from './core/navbar/navbar.component';
 import {CadsiteModule} from './cadsite/cadsite.module';
+import {NorteusuarioModule} from './norteusuario/norteusuario.module';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import {CadsiteModule} from './cadsite/cadsite.module';
     CollapseModule.forRoot(),
     BsDropdownModule.forRoot(),
     CadsiteModule,
+    NorteusuarioModule,
     AppRoutingModule,
     UtilModule
   ],

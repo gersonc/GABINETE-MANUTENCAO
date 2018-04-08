@@ -18,7 +18,12 @@ import {NorteusuarioComponent} from './norteusuario.component';
     DadosModule,
     NorteusuarioeRoutingModule
   ],
-  declarations: [NorteusuarioComponent]
+  declarations: [
+    NorteusuarioComponent
+  ],
+  exports: [
+    NorteusuarioComponent
+  ]
 })
 export class NorteusuarioModule {
 }

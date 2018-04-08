@@ -3,13 +3,13 @@ import {RouterModule, Routes} from '@angular/router';
 
 import {NorteusuarioComponent} from './norteusuario.component';
 
-const NorteusuarioComponentRoutes: Routes = [
+const NorteusuarioRoutes: Routes = [
   {path: 'norteusuario', component: NorteusuarioComponent}
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forChild(NorteusuarioComponentRoutes)
+    RouterModule.forChild(NorteusuarioRoutes)
   ],
   exports: [
     RouterModule
