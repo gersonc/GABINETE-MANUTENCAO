@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {CadsiteInterface, Totalnterface} from '../dados/dados.interface';
 import {DadosService} from '../dados/dados.service';
 import {Subscription} from 'rxjs/Subscription';
-import {SelectItem} from 'primeng/api';
 
 @Component({
   selector: 'app-cadsite',

@@ -13,22 +13,19 @@
   [responsive]="true">
   <ng-template pTemplate="caption">
     <div style="text-align:left">
-
       <p-multiSelect
         [options]="cols"
         [(ngModel)]="selectedColumns"
-        optionLabel="field"
-        selectedItemsLabel="{0} columns selected"
+        optionLabel="header"
+        selectedItemsLabel="{0} Colunas"
         [style]="{minWidth: '200px'}"
-        defaultLabel="Choose Columns">
+        defaultLabel="Escolha">
       </p-multiSelect>
-
-
     </div>
   </ng-template>
   <ng-template pTemplate="colgroup" let-columns>
     <colgroup>
-      <col *ngFor="let col of columns" [style.width]="col.largura">
+      <col *ngFor="let col of columns">
     </colgroup>
   </ng-template>
   <ng-template pTemplate="header" let-columns>
@@ -36,6 +33,7 @@
       <th *ngFor="let col of columns"
           [pSortableColumn]="col.field"
           [pSortableColumnDisabled]="col.sortable"
+          [style.width]="col.largura"
           pResizableColumn
           pReorderableColumn
       >
