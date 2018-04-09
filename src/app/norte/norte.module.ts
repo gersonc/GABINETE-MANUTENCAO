@@ -6,25 +6,20 @@ import {TableModule} from 'primeng/table';
 import {MultiSelectModule} from 'primeng/multiselect';
 
 import {DadosModule} from '../dados/dados.module';
-import {CadsiteRoutingModule} from './cadsite-routing.module';
-import {CadsiteComponent} from './cadsite.component';
-
+import {NorteComponent} from './norte.component';
+import {NorteRoutingModule} from './norte-routing.module';
 
 @NgModule({
   imports: [
+    CommonModule,
     CommonModule,
     FormsModule,
     DadosModule,
     MultiSelectModule,
     TableModule,
-    CadsiteRoutingModule
+    NorteRoutingModule
   ],
-  declarations: [
-    CadsiteComponent
-  ],
-  exports: [
-    CadsiteComponent
-  ]
+  declarations: [NorteComponent]
 })
-export class CadsiteModule {
+export class NorteModule {
 }

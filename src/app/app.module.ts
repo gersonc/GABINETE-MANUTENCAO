@@ -12,6 +12,7 @@ import {FooterComponent} from './core/footer/footer.component';
 import {NavbarComponent} from './core/navbar/navbar.component';
 import {CadsiteModule} from './cadsite/cadsite.module';
 import {NorteusuarioModule} from './norteusuario/norteusuario.module';
+import {NorteModule} from './norte/norte.module';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import {NorteusuarioModule} from './norteusuario/norteusuario.module';
     BsDropdownModule.forRoot(),
     CadsiteModule,
     NorteusuarioModule,
+    NorteModule,
     AppRoutingModule,
     UtilModule
   ],

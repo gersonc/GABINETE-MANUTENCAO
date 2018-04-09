@@ -28,9 +28,11 @@ export class NorteusuarioComponent implements OnInit {
     this.rows = 10;
     this.sortOrder = 'DESC';
     this.sortField = 'usuario_nome';
+    console.log('contructor');
   }
 
   ngOnInit() {
+    console.log('ngOnInit');
     this.getNorteusuarios();
     this.cols = [
       {field: 'usuario_id', header: 'ID', sortable: false, largura: '70px'},
@@ -38,16 +40,17 @@ export class NorteusuarioComponent implements OnInit {
       {field: 'usuario_email', header: 'E-MAIL', sortable: false, largura: '250px'},
       {field: 'usuario_senha', header: 'SENHA', sortable: true, largura: '150px'},
       {field: 'usuario_cargo', header: 'CARGO', sortable: false, largura: '200px'},
-      {field: 'usuario_celular', header: 'PARLAMENTAR', sortable: true, largura: '200px'},
-      {field: 'primeiro_acesso', header: '1 ACESSO', sortable: false, largura: '80px'},
-      {field: 'usuario_acesso', header: 'ACESSO', sortable: false, largura: '200px'},
-      {field: 'usuario_db', header: 'BASE', sortable: false, largura: '70px'},
-      {field: 'norte_parlamentar_id', header: 'PARLAMENTAR ID', sortable: false, largura: '200px'}
+      {field: 'usuario_celular', header: 'CELULAR', sortable: true, largura: '200px'},
+      {field: 'primeiro_acesso', header: '1 ACESSO', sortable: false, largura: '130px'},
+      {field: 'usuario_db', header: 'BASE', sortable: false, largura: '150px'},
+      {field: 'norte_parlamentar_id', header: 'PARLAMENTAR ID', sortable: false, largura: '200px'},
+      {field: 'usuario_acesso', header: 'ACESSO', sortable: true, largura: '500px'}
     ];
     this.selectedColumns = this.cols;
   }
 
   getNorteusuarios() {
+    console.log('getNorteusuarios');
     this.dadosService.getUsuarioLer(this.first, this.rows, this.sortField, this.sortOrder)
       .subscribe({
         next: (dados) => {
