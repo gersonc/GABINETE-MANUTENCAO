@@ -62,7 +62,7 @@ export interface CadsitePaginacaoInterface {
 }
 
 export interface NortePaginacaoInterface {
-  norteusuarios: NorteInterface[];
+  nortes: NorteInterface[];
   total: Totalnterface[];
 }
 

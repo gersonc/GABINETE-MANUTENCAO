@@ -41,7 +41,7 @@ export class NorteusuarioComponent implements OnInit {
       {field: 'usuario_senha', header: 'SENHA', sortable: true, largura: '150px'},
       {field: 'usuario_cargo', header: 'CARGO', sortable: false, largura: '200px'},
       {field: 'usuario_celular', header: 'CELULAR', sortable: true, largura: '200px'},
-      {field: 'primeiro_acesso', header: '1 ACESSO', sortable: false, largura: '130px'},
+      {field: 'primeiro_acesso', header: '1\u00BA ACESSO', sortable: false, largura: '130px'},
       {field: 'usuario_db', header: 'BASE', sortable: false, largura: '150px'},
       {field: 'norte_parlamentar_id', header: 'PARLAMENTAR ID', sortable: false, largura: '200px'},
       {field: 'usuario_acesso', header: 'ACESSO', sortable: true, largura: '500px'}

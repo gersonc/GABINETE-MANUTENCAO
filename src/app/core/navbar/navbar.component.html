@@ -32,6 +32,14 @@
         </span>
       </li>
       <li class="nav-item">
+        <span dropdown container="body"><a class="nav-link" href dropdownToggle (click)="false">Norte</a><span
+          class="caret"></span>
+        <ul *dropdownMenu class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/norte" routerLinkActive="active">Listar</a></li>
+        </ul>
+        </span>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#">Pricing</a>
       </li>
     </ul>

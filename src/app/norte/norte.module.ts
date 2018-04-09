@@ -19,7 +19,8 @@ import {NorteRoutingModule} from './norte-routing.module';
     TableModule,
     NorteRoutingModule
   ],
-  declarations: [NorteComponent]
+  declarations: [NorteComponent],
+  exports: [NorteComponent]
 })
 export class NorteModule {
 }
