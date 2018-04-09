@@ -44,7 +44,7 @@ export class NorteusuarioComponent implements OnInit {
       {field: 'primeiro_acesso', header: '1\u00BA ACESSO', sortable: false, largura: '130px'},
       {field: 'usuario_db', header: 'BASE', sortable: false, largura: '150px'},
       {field: 'norte_parlamentar_id', header: 'PARLAMENTAR ID', sortable: false, largura: '200px'},
-      {field: 'usuario_acesso', header: 'ACESSO', sortable: true, largura: '500px'}
+      {field: 'usuario_acesso', header: 'ACESSO', sortable: true, largura: '900px'}
     ];
     this.selectedColumns = this.cols;
   }

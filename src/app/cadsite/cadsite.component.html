@@ -54,6 +54,7 @@
     <ng-template pTemplate="body" let-rowData let-columns="columns">
       <tr>
         <td *ngFor="let col of columns" class="ui-resizable-column" [style.width]="col.largura">
+          <span class="ui-column-title">{{col.header}}</span>
           {{rowData[col.field]}}
         </td>
       </tr>
