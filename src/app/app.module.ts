@@ -13,13 +13,15 @@ import {NavbarComponent} from './core/navbar/navbar.component';
 import {CadsiteModule} from './cadsite/cadsite.module';
 import {NorteusuarioModule} from './norteusuario/norteusuario.module';
 import {NorteModule} from './norte/norte.module';
+import {CampoControlErroComponent} from './core/campo-control-erro/campo-control-erro.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    CampoControlErroComponent
   ],
   imports: [
     BrowserModule,
