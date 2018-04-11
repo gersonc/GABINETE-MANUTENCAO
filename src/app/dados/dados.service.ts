@@ -8,7 +8,7 @@ import {CadsitePaginacaoInterface, UsuarioPaginacaoInterface, NortePaginacaoInte
 export class DadosService {
 
   private gab$: Observable<CadsitePaginacaoInterface>;
-  private siteUrl = 'http://manutencao.gabinet.com.br/api/';
+  private siteUrl = 'http://nordeste.dv/api/';
 
   constructor(private http: HttpClient) {
   }
